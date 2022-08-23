@@ -1,0 +1,5 @@
+Console - обращение к терминалу
+Console.WriteLine - вывести в окно терминала
+Console.ReadLine - считать строку из терминала
+Convert.ToInt32 - превращает строку в число
+number = Convert.ToInt32(Console.ReadLine()) - запрос числа
