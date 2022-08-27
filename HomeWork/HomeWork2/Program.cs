@@ -55,7 +55,7 @@ ThirdDigitOfNumber(num);
 /* 6 -> да
    7 -> да
    1 -> нет*/
-
+/*
 void Weekend(int number)
 {
    if(number > 5)
@@ -73,3 +73,4 @@ Console.Write("Введите цифру дня недели: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 Weekend(num);
+*/
