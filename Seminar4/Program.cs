@@ -9,13 +9,11 @@ int FindSum(int num)
     return sum;
 }
 
-Console.WriteLine("Input positive integer number: ");
+Console.Write("Input positive integer number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
-int sum = FindSum(a);
-Console.WriteLine($"Сумма чисел от 1 до {a} = {sum}");
+Console.WriteLine($"Сумма чисел от 1 до {a} = {FindSum(a)}");
 */
-
 
 //Работа в группах
 //Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе.
@@ -35,28 +33,40 @@ Method(number);
 int Method(int arg)
 {
     int kolvocifr = arg.ToString().Length;
-    //Console.WriteLine(kolvocifr);
     return kolvocifr;
 }
 
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int Met = Method(number);
-Console.WriteLine($"Количество цифр в числе {number} = {Met}");
+Console.WriteLine($"Количество цифр в числе {number} = {Method(number)}");
 */
+/*
+int Method(int arg)
+{
+    int size = 0;
+    while(arg > 0)
+    {
+        arg /= 10;
+        size++;
+    }
+    return size;
+}
 
+Console.Write("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Количество цифр в числе {number} = {Method(number)}");
+*/
 //Напишите программу, которая принимает на вход число N и выдаёт произведение чисел от 1 до N.
 /*
 int Method(int arg)
 {
-    int count = 1;
     int proiz = 1;
 
-    while (count <= arg)
+    for (int count = 1; count <= arg; count++)
     {
         proiz = count * proiz;
-        count++;
     }
     return proiz;
 }
@@ -64,8 +74,7 @@ int Method(int arg)
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int Met = Method(number);
-Console.WriteLine($"Произведение чисел от 1 до {number} = {Met}");
+Console.WriteLine($"Произведение чисел от 1 до {number} = {Method(number)}");
 */
 
 
