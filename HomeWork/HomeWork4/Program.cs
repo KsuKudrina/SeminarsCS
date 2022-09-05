@@ -51,7 +51,7 @@ MethodSum(number);
 //6, 1, 33 -> [6, 1, 33]
  
 /*
-int[] CreateArray (int size, int arg)
+int[] CreateArray (int size) 
 {
     int[] newArray = new int[size];
 
@@ -72,8 +72,7 @@ Console.Write("Задайте размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Заполните массив: ");
-int arg = Convert.ToInt32(Console.ReadLine());
 
-int[] myArray = CreateArray(size, arg);
+int[] myArray = CreateArray(size);
 ShowArray(myArray);
 */
