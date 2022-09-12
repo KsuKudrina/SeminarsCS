@@ -1,4 +1,5 @@
 ﻿//Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
+
 /*
 int[,] CreateRandom2dArray()
 {
@@ -53,8 +54,11 @@ Show2dArray(myArray);
 ChangeRows(myArray, 0, 5);
 Show2dArray(myArray);
 */
+
+
 //Задайте двумерный массив. Напишите программу, которая заменяет строки на столбцы. 
 //В случае, если это невозможно, программа должна вывести сообщение для пользователя.
+
 /*
 int[,] CreateRandom2dArray()
 {
@@ -116,12 +120,13 @@ Show2dArray(myArray);
 
 SwapRC(myArray);
 Show2dArray(myArray);
+*/
 
 
 //Из двумерного массива целых чисел удалить строку и столбец, 
 //на пересечении которых расположен наименьший элемент.
-*/
 
+/*
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input number of rows: ");
@@ -200,7 +205,11 @@ int[,] myArray = CreateRandom2dArray();
 Show2dArray(myArray);
 int[,] myArray2 = CopedArray(myArray);
 Show2dArray(myArray2);
+*/
+
+
 //Написать программу поэлементного копирования массива.
+
 /*
 int[,] CreateRandom2dArray()
 {
@@ -260,5 +269,6 @@ Show2dArray(myArray);
 CopedArray(myArray);
 Show2dArray(myArray);
 */
+
 
 //Домашняя MathProfi
