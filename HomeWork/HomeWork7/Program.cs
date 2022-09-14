@@ -54,7 +54,7 @@ Show2dArray(newArray);
 //8 4 2 4
 //17 -> такого числа в массиве нет
 
-/*
+
 int[,] CreateRandom2dArray()
 {
     Console.Write("Input number of rows: ");
@@ -98,25 +98,29 @@ void NumPosition(int[,] array)
     int posI = Convert.ToInt32(Console.ReadLine());
     Console.Write($"Укажите j позицию элемента: ");
     int posJ = Convert.ToInt32(Console.ReadLine());
-    int elem = 0;
+    //int elem = 0;
 
-    for(int i = 0; i < array.GetLength(0); i++)
-        for(int j = 0; j < array.GetLength(1); j++)
-        {
-            if(i == posI && j == posJ)
-            {
-                elem = array[i, j];
-            }
-        }
-    if(elem == 0) Console.WriteLine($"Числа с такой позицией в массиве нет");
+    if(posI <= array.GetLength(0) && posJ <= array.GetLength(1))
+        Console.WriteLine($"Значение элемента: {array[posI, posJ]}");
     else
-        Console.WriteLine($"Значение элемента: {elem}");  
+        Console.WriteLine($"Числа с такой позицией в массиве нет");
+    //for(int i = 0; i < array.GetLength(0); i++)
+        //for(int j = 0; j < array.GetLength(1); j++)
+        //{
+            //if(i == posI && j == posJ)
+            //{
+                //elem = array[i, j];
+            //}
+        //}
+    //if(elem == 0) Console.WriteLine($"Числа с такой позицией в массиве нет");
+    //else
+        //Console.WriteLine($"Значение элемента: {elem}");  
 }
 int[,] newArray = CreateRandom2dArray();
 Show2dArray(newArray);
 
 NumPosition(newArray);
-*/
+
 
 
 //Задача 52. Задайте двумерный массив из целых чисел. 
