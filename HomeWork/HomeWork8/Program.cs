@@ -337,10 +337,6 @@ int[,] CreateRandom2dArray()
     //int rows = Convert.ToInt32(Console.ReadLine());
     //Console.Write("Input number of colums: ");
     //int columns = Convert.ToInt32(Console.ReadLine());
-    //Console.Write("Input the min possible value: ");
-    //int minValue = Convert.ToInt32(Console.ReadLine());
-    //Console.Write("Input the max possible value: ");
-    //int maxValue = Convert.ToInt32(Console.ReadLine());
 
     int size = 4;
     int num = 01;
@@ -353,8 +349,7 @@ int[,] CreateRandom2dArray()
         for(j = 0, i = 0; j < size; j++, i++) 
         {
             newArray[i,j] = num;
-            num++;
-            //Console.Write(num + " * ");   
+            num++;  
         }
             
             for(i = 1, j = size -1; i < size; i++)
