@@ -31,8 +31,12 @@ int ShowNumsSum(int m, int n)
     if(m < n) return m + ShowNumsSum(m + 1 , n);
     else return m + ShowNumsSum(m - 1, n);
 } 
-   
-Console.Write(ShowNumsSum(0, 15)); 
+Console.Write("Введите число m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.Write(ShowNumsSum(m, n)); 
 */
 
 
@@ -49,5 +53,10 @@ int Ackerman(int m, int n)
     if(m > 0 && n > 0) return Ackerman(m - 1, Ackerman(m, n - 1));
     else return n + 1;
 }
-Console.Write(Ackerman(3, 2));
+Console.Write("Введите неотрицательное число m: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите неотрицательное число n: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.Write(Ackerman(m, n));
 */
